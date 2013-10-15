@@ -1,9 +1,8 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<div class="referenceList">
+  <h1>Reference List</h1>
+  <p>Categories</p>
+  <div  ng-repeat="item in tags">
+    	<button type = "button" ng-click="handleClick(item)">{{item}}</button>
+	</div>
+   </ul>
 </div>

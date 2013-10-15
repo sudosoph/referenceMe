@@ -1,10 +1,27 @@
 'use strict';
 
 angular.module('referenceMeApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
+  .controller('MainCtrl', function ($scope, $location) {
+    $scope.tags = [
+      'Git',
+      'HTML',
+      'CSS',
+      'Javascript',
       'AngularJS',
-      'Karma'
+      'Ruby',
+      'Misc',
+      'Funny'
     ];
+
+    $scope.handleClick = function (selectedCategory){
+    	// // console.log("handleClick");
+     //    console.log(selectedCategory);
+
+     //    $rootScope.selection = selectedCategory;
+
+     $location.path('/categories');
+
+
+
+    };
   });
